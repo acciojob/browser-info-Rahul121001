@@ -8,7 +8,18 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="browser-info"></div>
+
     <script type="text/javascript" src="./script.js">
+		 function getBrowserInfo() {
+      const browserInfo = navigator.userAgent;
+      return browserInfo;
+    }
+
+    // Display browser information
+    const browserInfoDiv = document.getElementById("browser-info");
+    const userAgent = getBrowserInfo();
+    browserInfoDiv.textContent = "You are using: " + userAgent;
 </script>
 
 </body>
